@@ -54,7 +54,7 @@ type CoordJS = Coord;
 declare module './testlib' {
 	interface Coord extends CoordJS {}
 }
-
+/*
 test('Methods and primitive types', function(t: any) {
 	var Type = testModule.PrimitiveMethods;
 
@@ -539,11 +539,13 @@ test('Reflection', function(t: any) {
 
 	t.end();
 });
-
-test('Reflection', function(t: any) {
+*/
+test('StringStream', function(t: any) {
 	const StringStream = testModule.StringStream;
 
 	t.strictEqual(new StringStream().bug(), 6);
 
 	t.end();
 });
+
+setTimeout(function() {}, 2000);

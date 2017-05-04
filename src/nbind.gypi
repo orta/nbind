@@ -68,7 +68,11 @@
 			"msbuild_settings": {
 				"ClCompile": {
 					"RuntimeTypeInfo": "false",
+					"Optimization": "Disabled",
+					"BasicRuntimeChecks": "StackFrameRuntimeCheck", # "UnininitializedLocalUsageCheck"
 					"ExceptionHandling": "Sync", # /EHsc
+					"DebugInformationFormat": "ProgramDatabase",
+					"RuntimeLibrary": "MultiThreadedDebugDLL",
 					"MultiProcessorCompilation": "true"
 				}
 			},
